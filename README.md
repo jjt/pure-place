@@ -1,5 +1,7 @@
-Pure
+Pure-Place
 ====
+
+Consumes Pure with rework and outputs scss placeholders.
 
 [![Pure](http://f.cl.ly/items/2y0M0E2Q3a2H0z1N1Y19/pure-banner.png)][Pure]
 
