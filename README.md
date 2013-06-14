@@ -1,7 +1,10 @@
 Pure-Place
 ====
 
-Consumes `Pure/src/**/css/*.css` with rework and outputs scss placeholders into the `scss` dir.
+A fork of the Pure project that adds a custom [Grunt](http://gruntjs.com/) task
+that uses  [Rework](https://github.com/visionmedia/rework)
+to turn the `.pure____` classes in `src/**/css/*.css` into
+`%pure____` placeholders in `scss/**/_*.scss placeholders into the `scss` dir.
 
 #### src/tables/css/tables.css
     .pure-table-striped tr:nth-child(2n-1) td {
