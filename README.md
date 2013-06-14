@@ -2,12 +2,34 @@ Pure-Place
 ====
 
 A fork of the Pure project that turns the `.pure____` classes in `src/**/css/*.css` into
-`%pure____` placeholders in `scss/**/_*.scss`. Uses a custom [Grunt](http://gruntjs.com/) task
-that uses  [Rework](https://github.com/visionmedia/rework).
+`%pure____` placeholders in `scss/**/_*.scss`. Uses a custom [Grunt](http://gruntjs.com/) task and some [Rework](https://github.com/visionmedia/rework).
 
 Does not support responsive classes at this time, due to how Sass handles placeholders
 inside of `@media` queries.
 
+### Integrate
+
+your-sass-file.scss
+    @import "pure";
+    
+    .content {
+      @extend %pure-g;
+    }
+    
+    .main {
+      @extend %pure-u-2-3;
+    }
+    
+    .sidebar {
+      @extend %pure-u-1-3;
+    }
+
+
+### Build
+
+    npm install
+    grunt pure-place
+    
 
 #### Sample Output  
 
@@ -41,11 +63,7 @@ scss/tables/_tables.scss
       border-bottom-width: 0;
     }
 
-### Build
 
-    npm install
-    grunt pure-place
-    
 
 
 
