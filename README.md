@@ -1,7 +1,43 @@
 Pure-Place
 ====
 
-Consumes Pure with rework and outputs scss placeholders.
+Consumes `Pure/src/**/css/*.css` with rework and outputs scss placeholders into the `scss` dir.
+
+#### src/tables/css/tables.css
+    .pure-table-striped tr:nth-child(2n-1) td {
+        background-color: #f2f2f2;
+    }
+    
+    .pure-table-bordered td {
+        border-bottom: 1px solid #cbcbcb;
+    }
+    .pure-table-bordered tbody > tr:last-child td,
+    .pure-table-horizontal tbody > tr:last-child td {
+        border-bottom-width: 0;
+    }
+    
+#### scss/tables/_tables.scss
+
+    %pure-table-striped tr:nth-child(2n-1) td {
+      background-color: #f2f2f2;
+    }
+    
+    %pure-table-bordered td {
+      border-bottom: 1px solid #cbcbcb;
+    }
+    
+    %pure-table-bordered tbody > tr:last-child td,
+    %pure-table-horizontal tbody > tr:last-child td {
+      border-bottom-width: 0;
+    }
+
+### Build
+
+    npm install
+    grunt place-rework
+    
+
+
 
     
 
