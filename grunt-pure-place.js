@@ -5,7 +5,7 @@
  
 module.exports = function(grunt) {
   
-  grunt.registerMultiTask('place-rework', 'Builds SCSS files with placeholders.', function () {
+  grunt.registerMultiTask('pure-place', 'Builds SCSS files with placeholders.', function () {
     var _ = grunt.util._;
     var rework = require('rework');
     var options = this.options();
@@ -34,7 +34,7 @@ module.exports = function(grunt) {
             style.rules.forEach(function(rule, ruleIndex) {
               if(rule.selectors !== undefined)
                 rule.selectors.forEach(function(selector, selectorIndex){
-                  newSel = selector.replace(/\.pure/g, '%pure-');
+                  newSel = selector.replace(/\.pure/g, '%pure');
                   style.rules[ruleIndex].selectors[selectorIndex] = newSel;
                 });
             });

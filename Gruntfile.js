@@ -288,7 +288,7 @@ grunt.registerTask('release', [
 
 // -- Pure Place Config/Task ----------------------------------------------------
 
-grunt.config.set('place-rework', {
+grunt.config.set('pure-place', {
   files: 'src/**/css/*.css',
   dest: 'scss'
 });

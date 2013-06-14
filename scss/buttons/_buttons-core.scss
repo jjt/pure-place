@@ -1,4 +1,4 @@
-%pure--button {
+%pure-button {
   /* Structure */
   display: inline-block;
   *display: inline;
@@ -18,7 +18,7 @@
 
 /* Firefox: Get rid of the inner focus border */
 
-%pure--button::-moz-focus-inner {
+%pure-button::-moz-focus-inner {
   padding: 0;
   border: 0;
 }

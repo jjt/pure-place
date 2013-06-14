@@ -1,6 +1,6 @@
 /*csslint regex-selectors:false, unqualified-attributes:false*/
 
-%pure--g-r {
+%pure-g-r {
   letter-spacing: -0.31em;
   *letter-spacing: normal;
   *word-spacing: -0.43em;
@@ -12,11 +12,11 @@
 */
 
 .opera-only :-o-prefocus,
-%pure--g-r {
+%pure-g-r {
   word-spacing: -0.43em;
 }
 
-%pure--g-r img {
+%pure-g-r img {
   max-width: 100%;
 }
 

@@ -1,4 +1,4 @@
-%pure--g {
+%pure-g {
   letter-spacing: -0.31em;
   /* Webkit: collapse white-space between units */
   *letter-spacing: normal;
@@ -15,11 +15,11 @@
 */
 
 .opera-only :-o-prefocus,
-%pure--g {
+%pure-g {
   word-spacing: -0.43em;
 }
 
-%pure--u {
+%pure-u {
   display: inline-block;
   *display: inline;
   /* IE < 8: fake inline-block */
