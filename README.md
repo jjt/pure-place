@@ -34,7 +34,7 @@ Consumes `Pure/src/**/css/*.css` with rework and outputs scss placeholders into 
 ### Build
 
     npm install
-    grunt place-rework
+    grunt pure-place
     
 
 
