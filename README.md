@@ -6,7 +6,8 @@ that uses  [Rework](https://github.com/visionmedia/rework)
 to turn the `.pure____` classes in `src/**/css/*.css` into
 `%pure____` placeholders in `scss/**/_*.scss`.
 
-Does not support responsive classes at this time, due to how Sass handles `@media` queries. Gonna investigate.
+Does not support responsive classes at this time, due to how Sass handles placeholders
+inside of `@media` queries. Gonna investigate.
 
 
 #### Sample Output  
