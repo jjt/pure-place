@@ -6,6 +6,8 @@ that uses  [Rework](https://github.com/visionmedia/rework)
 to turn the `.pure____` classes in `src/**/css/*.css` into
 `%pure____` placeholders in `scss/**/_*.scss`.
 
+**Does not support responsive classes at this time**
+
 #### src/tables/css/tables.css
     .pure-table-striped tr:nth-child(2n-1) td {
         background-color: #f2f2f2;
