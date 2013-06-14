@@ -1,13 +1,12 @@
 Pure-Place
 ====
 
-A fork of the Pure project that adds a custom [Grunt](http://gruntjs.com/) task
-that uses  [Rework](https://github.com/visionmedia/rework)
-to turn the `.pure____` classes in `src/**/css/*.css` into
-`%pure____` placeholders in `scss/**/_*.scss`.
+A fork of the Pure project that turns the `.pure____` classes in `src/**/css/*.css` into
+`%pure____` placeholders in `scss/**/_*.scss`. Uses a custom [Grunt](http://gruntjs.com/) task
+that uses  [Rework](https://github.com/visionmedia/rework).
 
 Does not support responsive classes at this time, due to how Sass handles placeholders
-inside of `@media` queries. Gonna investigate.
+inside of `@media` queries.
 
 
 #### Sample Output  
