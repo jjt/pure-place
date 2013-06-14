@@ -10,6 +10,7 @@ inside of `@media` queries.
 ### Integrate
 
 your-sass-file.scss
+
     @import "pure";
     
     .content {
