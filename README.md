@@ -8,7 +8,9 @@ to turn the `.pure____` classes in `src/**/css/*.css` into
 
 **Does not support responsive classes at this time**
 
-#### src/tables/css/tables.css
+
+#### Sample Output
+src/tables/css/tables.css
     .pure-table-striped tr:nth-child(2n-1) td {
         background-color: #f2f2f2;
     }
@@ -21,7 +23,7 @@ to turn the `.pure____` classes in `src/**/css/*.css` into
         border-bottom-width: 0;
     }
     
-#### scss/tables/_tables.scss
+scss/tables/_tables.scss
 
     %pure-table-striped tr:nth-child(2n-1) td {
       background-color: #f2f2f2;
