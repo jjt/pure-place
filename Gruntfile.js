@@ -241,8 +241,10 @@ grunt.initConfig({
             }
         }
     }
+
 });
 
+  
 // -- Main Tasks ---------------------------------------------------------------
 
 grunt.loadNpmTasks('grunt-contrib-clean');
@@ -282,6 +284,17 @@ grunt.registerTask('release', [
     'clean:release',
     'compress:release'
 ]);
+
+
+// -- Pure Place Config/Task ----------------------------------------------------
+
+grunt.config.set('place-rework', {
+  files: 'src/**/css/*.css',
+  dest: 'scss'
+});
+
+require('./grunt-pure-place')(grunt);
+
 
 // -- Suppress Task ------------------------------------------------------------
 
