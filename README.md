@@ -9,9 +9,9 @@ to turn the `.pure____` classes in `src/**/css/*.css` into
 **Does not support responsive classes at this time**
 
 
-#### Sample Output
+#### Sample Output  
 
-src/tables/css/tables.css
+src/tables/css/tables.css   
     .pure-table-striped tr:nth-child(2n-1) td {
         background-color: #f2f2f2;
     }
@@ -25,7 +25,7 @@ src/tables/css/tables.css
     }
 
 
-scss/tables/_tables.scss
+scss/tables/_tables.scss  
 
     %pure-table-striped tr:nth-child(2n-1) td {
       background-color: #f2f2f2;
