@@ -10,6 +10,7 @@ to turn the `.pure____` classes in `src/**/css/*.css` into
 
 
 #### Sample Output
+
 src/tables/css/tables.css
     .pure-table-striped tr:nth-child(2n-1) td {
         background-color: #f2f2f2;
@@ -22,7 +23,8 @@ src/tables/css/tables.css
     .pure-table-horizontal tbody > tr:last-child td {
         border-bottom-width: 0;
     }
-    
+
+
 scss/tables/_tables.scss
 
     %pure-table-striped tr:nth-child(2n-1) td {
