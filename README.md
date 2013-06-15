@@ -1,11 +1,12 @@
 Pure-Place
 ====
 
-A fork of the Pure project that turns the `.pure____` classes in `src/**/css/*.css` into
-`%pure____` placeholders in `scss/**/_*.scss`. Uses a custom [Grunt](http://gruntjs.com/) task and some [Rework](https://github.com/visionmedia/rework).
+A fork of the Pure project that uses [grunt-pure-place](https://github.com/jjt/grunt-pure-place)
+to turn the `.pure____` classes in `src/**/css/*.css` into
+`%pure____` placeholders in `scss/**/_*.scss`.
 
-Does not support responsive classes at this time, due to how Sass handles placeholders
-inside of `@media` queries.
+The grunt-pure-place plugin does not support responsive classes at this time,
+due to how Sass handles placeholders inside of `@media` queries.
 
 ### Integrate
 
