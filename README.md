@@ -33,37 +33,6 @@ your-sass-file.scss
     grunt pure-place
     
 
-#### Sample Output  
-
-src/tables/css/tables.css   
-
-    .pure-table-striped tr:nth-child(2n-1) td {
-        background-color: #f2f2f2;
-    }
-    
-    .pure-table-bordered td {
-        border-bottom: 1px solid #cbcbcb;
-    }
-    .pure-table-bordered tbody > tr:last-child td,
-    .pure-table-horizontal tbody > tr:last-child td {
-        border-bottom-width: 0;
-    }
-
-
-scss/tables/_tables.scss  
-
-    %pure-table-striped tr:nth-child(2n-1) td {
-      background-color: #f2f2f2;
-    }
-    
-    %pure-table-bordered td {
-      border-bottom: 1px solid #cbcbcb;
-    }
-    
-    %pure-table-bordered tbody > tr:last-child td,
-    %pure-table-horizontal tbody > tr:last-child td {
-      border-bottom-width: 0;
-    }
 
 
 
