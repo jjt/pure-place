@@ -2,6 +2,8 @@ var path = require('path');
 
 module.exports = function (grunt) {
 
+console.log(grunt.config);
+
 // -- Config -------------------------------------------------------------------
 
 grunt.initConfig({
@@ -244,6 +246,7 @@ grunt.initConfig({
 
 });
 
+//console.log(grunt.config);
   
 // -- Main Tasks ---------------------------------------------------------------
 
@@ -288,12 +291,12 @@ grunt.registerTask('release', [
 
 // -- Pure Place Config/Task ----------------------------------------------------
 
-grunt.config.set('pure-place', {
-  files: 'src/**/css/*.css',
-  dest: 'scss'
-});
 
-require('./grunt-pure-place')(grunt);
+require('grunt-pure-place')(grunt);
+//grunt.loadNpmTasks('grunt-pure-place');
+
+
+
 
 
 // -- Suppress Task ------------------------------------------------------------
