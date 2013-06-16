@@ -56,9 +56,9 @@ your-sass-file.scss
     grunt pure-place
     
 
-#### Sample Output  
+#### Sample Transformation
 
-src/tables/css/tables.css   
+Input `src/tables/css/tables.css`   
 
     .pure-table-striped tr:nth-child(2n-1) td {
         background-color: #f2f2f2;
@@ -73,7 +73,7 @@ src/tables/css/tables.css
     }
 
 
-scss/tables/_tables.scss  
+Output `scss/tables/_tables.scss`  
 
     %pure-table-striped tr:nth-child(2n-1) td {
       background-color: #f2f2f2;
@@ -91,8 +91,8 @@ scss/tables/_tables.scss
 ### Changelog
 
 #### v0.1.1
-*Responsive media queries
-*Grid selector functions
+ * Responsive media queries  
+ * Grid selector functions
 
 
 
