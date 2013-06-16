@@ -18,9 +18,8 @@ classes you need. The exception is the grid+responsive system, which is due to t
 
 So what we do instead is here is output the permutations of `pure-g` and `pure-u` prefixes 
 to get the desired number of `@media` queries. It's recommended that you just stick to one
-prefix and `@extend` the specific `%pure-u-____` placeholders.
+prefix and `@extend` the specific `%pure-u-____` placeholders in your structural elements.
 
-If you want to  
 
 #### [Pure website](http://purecss.io/)
 
@@ -37,11 +36,8 @@ your-sass-file.scss
     // .pure-u-*-*, .pure-g-r, etc...
     $pure-g-r-prefixes: pure-g;
     $pure-u-r-prefixes: pure-u;
-    // If you want to extend every %pure-u-*-* placeholder yourself
-    // $pure-g-r-prefixes: null;
-    // $pure-u-r-prefixes: null;
     
-    // Output grid css
+    // Output grid css - comment if you want no grid css output
     @include set-pure-r-prefixes;
     @include set-pure-u-prefixes;
 
