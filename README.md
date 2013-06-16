@@ -16,8 +16,11 @@ classes you need. The exception is the grid+responsive system, which is due to t
       }
     }
 
-The responsive grid classes that ship with Pure are useful and can be outputted with
-multiple custom prefixes. 
+So what we do instead is here is output the permutations of `pure-g` and `pure-u` prefixes 
+to get the desired number of `@media` queries. It's recommended that you just stick to one
+prefix and `@extend` the specific `%pure-u-____` placeholders.
+
+If you want to  
 
 #### [Pure website](http://purecss.io/)
 
@@ -30,10 +33,13 @@ your-sass-file.scss
     @import "path/to/_pure.scss";
     @import "path/to/_functions.scss";
 
-    // Default class names for all grid elements - recommended
-    // eg. .pure-u-1-4, .pure-g-r, etc...
+    // Default class names for all .grid elements - recommended
+    // .pure-u-*-*, .pure-g-r, etc...
     $pure-g-r-prefixes: pure-g;
     $pure-u-r-prefixes: pure-u;
+    // If you want to extend every %pure-u-*-* placeholder yourself
+    // $pure-g-r-prefixes: null;
+    // $pure-u-r-prefixes: null;
     
     // Output grid css
     @include set-pure-r-prefixes;
