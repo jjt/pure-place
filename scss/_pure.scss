@@ -1,28 +1,32 @@
 // Pure built as SASS placeholders
 
-@import "base/normalize";
+// You'll want to manually add base/normalize to mystyles.scss
+//@import "base/normalize";
 @import "base/normalize-context";
 
 /* Buttons*/
 @import "buttons/buttons-core.scss";
 @import "buttons/buttons.scss";
-
 /* Forms*/
 @import "forms/forms-core.scss";
 @import "forms/forms-r.scss";
 @import "forms/forms.scss";
-
 /* Grids*/
 @import "grids/grids-core.scss";
 @import "grids/grids-r.scss";
 @import "grids/grids-units.scss";
-
 /* Menus*/
 @import "menus/menus-core.scss";
 @import "menus/menus-paginator.scss";
 @import "menus/menus-r.scss";
 @import "menus/menus.scss";
-
 /* Tables*/
 @import "tables/tables.scss";
 
+
+
+@media(max-width: 960px) {
+  %pure-g-media > [class *= "%pure-u-media-"] {
+    width: 100%;    
+  }
+}

@@ -2,7 +2,6 @@ var path = require('path');
 
 module.exports = function (grunt) {
 
-console.log(grunt.config);
 
 // -- Config -------------------------------------------------------------------
 

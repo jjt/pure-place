@@ -1,8 +1,8 @@
 {
   "name": "pure",
-  "version": "0.2.1-pre",
+  "version": "0.1.1",
   "private": true,
-  "repository": "git://github.com/yui/pure.git",
+  "repository": "git://github.com/jjt/pure-place",
   "devDependencies": {
     "grunt": "~0.4.1",
     "parserlib": "~0.2.2",
