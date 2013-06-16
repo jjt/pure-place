@@ -1,7 +1,7 @@
 Pure-Place
 ====
 
-A fork of the Pure project that turns the `.pure____` classes in `src/**/css/*.css` into
+A fork of the [Pure](http://purecss.io/) project that turns the `.pure____` classes in `src/**/css/*.css` into
 `%pure____` placeholders in `scss/**/_*.scss`. Uses a custom [Grunt](http://gruntjs.com/)
 task and some [Rework](https://github.com/visionmedia/rework).
 
@@ -16,14 +16,10 @@ classes you need. The exception is the grid+responsive system, which is due to t
       }
     }
 
-So what we do instead is here is output the permutations of `pure-g` and `pure-u` prefixes 
-to get the desired number of `@media` queries. It's recommended that you just stick to one
-prefix and `@extend` the specific `%pure-u-____` placeholders in your structural elements.
-
-
-#### [Pure website](http://purecss.io/)
-
-#### [Pure on Github](https://github.com/yui/pure)
+So what we do instead is output the combinations of the variables/lists `$pure-g-r-prefixes`
+and `$pure-u-r-prefixes` to get the desired `@media` queries. It's likely that you won't need 
+more than one prefix each (default `pure-r` and `pure-u`) for outputted grid css, as you can
+`@extend` your structural elements with the specific `%pure-g[-r]` and `%pure-u-____` placeholders.
 
 ### Integrate
 
@@ -32,8 +28,8 @@ your-sass-file.scss
     @import "path/to/_pure.scss";
     @import "path/to/_functions.scss";
 
-    // Default class names for all .grid elements - recommended
-    // .pure-u-*-*, .pure-g-r, etc...
+    // Default class names for all .grid elements
+    // Recommended, unless you have almost no grid needs at all
     $pure-g-r-prefixes: pure-g;
     $pure-u-r-prefixes: pure-u;
     
