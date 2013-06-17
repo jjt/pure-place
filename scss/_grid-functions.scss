@@ -5,6 +5,7 @@ $pure-grid-units:  "1", "1-2", "1-3", "2-3", "1-4", "3-4", "1-5", "2-5", "3-5",
   "4-5", "1-6", "5-6", "1-8", "3-8", "5-8", "7-8", "1-12", "5-12", "7-12",
   "11-12", "1-24", "5-24", "7-24", "11-24", "13-24", "17-24", "19-24", "23-24";
 
+$pure-place-grid-units: $pure-grid-units;
 
 @mixin pure-r-media($query) {
   @media($query) {
@@ -19,14 +20,14 @@ $pure-grid-units:  "1", "1-2", "1-3", "2-3", "1-4", "3-4", "1-5", "2-5", "3-5",
   }
 }
 
-@mixin set-pure-r-prefixes() {
+@mixin output-pure-grid-r-classes() {
   @include pure-r-media("max-width: 480px");
   @include pure-r-media("max-width: 767px");
 }
 
-@mixin set-pure-u-prefixes() {
+@mixin output-pure-grid-u-classes() {
   @each $class in $pure-place-u-r-prefixes {
-    @each $grid in $pure-grid-units {
+    @each $grid in $pure-place-grid-units {
       .#{$class}-u-#{$grid} {
         @extend %pure-u-#{$grid};
       }  
