@@ -8,13 +8,13 @@ task and some [Rework](https://github.com/visionmedia/rework).
 ### Install
     bower install pure-place
 
-### 
+### Sass Placeholders
 
-Most of the classes are just replaced by a placeholder so that you can extend only those 
-classes you need, even those inside media queries:
+Almost all of the `.pure*` classes that make up the css are replaced by a placeholder so that you can
+extend only those classes you need.
 
     // Pure css input
-   .pure-table-bordered tbody > tr:last-child td,
+    .pure-table-bordered tbody > tr:last-child td,
     .pure-table-horizontal tbody > tr:last-child td {
         border-bottom-width: 0;
     }
@@ -24,11 +24,21 @@ classes you need, even those inside media queries:
     %pure-table-horizontal tbody > tr:last-child td {
       border-bottom-width: 0;
     }
+    
+    // Your scss
+    .my-table {
+      @extend %pure-table;
+      @extend %pure-table-horizontal;
+    }
 
-The exception is the grid+responsive system. It's recommended that you output the grid system css and
-extend the `.pure-u/g/r-*` classes. For more information, see below/
+The exception is the responsive grid system. It's recommended that you output the grid system css and
+extend the `.pure-u/g/r-*` classes. For more information, see
+[Responsive Grid System Issues](#responsive-grid-system-issues).
 
+### Pure classes
 
+Pure place also offers stylesheets that output the Pure classes in css, with a customizable
+prefix, `$pure-classes-prefix`.
 
 ### Example
 
@@ -77,9 +87,9 @@ extend the `.pure-u/g/r-*` classes. For more information, see below/
       }
     }
 
-### Grid + responsive system issue
+### Responsive Grid System Issues
 
-Pure uses a `.pure-g-r > [class *= "_____"]` selectors used in the following way: 
+Pure uses the `[class *= "_____"]` selector in the following way: 
 
     @media (max-width: 767px) {
         .pure-g-r > .pure-u,
