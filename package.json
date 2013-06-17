@@ -17,7 +17,7 @@
     "rework": "~0.16.0",
     "grunt-rework": "0.0.3",
     "JSON": "~1.0.0",
-    "grunt-pure-place": "latest",
+    "grunt-pure-place": "git://github.com/jjt/grunt-pure-place.git",
     "grunt-link": "~0.1.1"
   }
 }

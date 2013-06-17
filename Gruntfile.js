@@ -241,6 +241,11 @@ grunt.initConfig({
                 interrupt: true
             }
         }
+    },
+
+    'pure-place': {
+      files: 'src/**/css/*.css',
+      dest: 'scss'
     }
 
 });
@@ -291,8 +296,8 @@ grunt.registerTask('release', [
 // -- Pure Place Config/Task ----------------------------------------------------
 
 
-require('grunt-pure-place')(grunt);
-//grunt.loadNpmTasks('grunt-pure-place');
+//require('grunt-pure-place')(grunt);
+grunt.loadNpmTasks('grunt-pure-place');
 
 
 
