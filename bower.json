@@ -3,5 +3,5 @@
   "version": "0.1.1",
   "main": "scss/_pure.scss",
   "repository": "git://github.com/jjt/pure-place",
-  "ignore": ["./!(scss)", "./!(css)"]
+  "ignore": ["!./scss", "!./css"]
 }
