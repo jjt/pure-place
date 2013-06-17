@@ -1,7 +1,8 @@
 // Pure built as SASS placeholders
 
-// You'll want to manually add base/normalize to mystyles.scss
+// Copy this line to mystyles.scss and uncomment
 //@import "base/normalize";
+
 @import "base/normalize-context";
 
 /* Buttons*/
@@ -22,11 +23,3 @@
 @import "menus/menus.scss";
 /* Tables*/
 @import "tables/tables.scss";
-
-
-
-@media(max-width: 960px) {
-  %pure-g-media > [class *= "%pure-u-media-"] {
-    width: 100%;    
-  }
-}

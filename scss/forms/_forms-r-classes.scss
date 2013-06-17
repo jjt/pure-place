@@ -1,0 +1,63 @@
+@media only screen and (max-width : 480px) {
+  .#{$pure-classes-prefix}-form button[type="submit"] {
+    margin: 0.7em 0 0;
+  }
+
+  .#{$pure-classes-prefix}-form input[type="text"],
+  .#{$pure-classes-prefix}-form input[type="password"],
+  .#{$pure-classes-prefix}-form input[type="email"],
+  .#{$pure-classes-prefix}-form input[type="url"],
+  .#{$pure-classes-prefix}-form input[type="date"],
+  .#{$pure-classes-prefix}-form input[type="month"],
+  .#{$pure-classes-prefix}-form input[type="time"],
+  .#{$pure-classes-prefix}-form input[type="datetime"],
+  .#{$pure-classes-prefix}-form input[type="datetime-local"],
+  .#{$pure-classes-prefix}-form input[type="week"],
+  .#{$pure-classes-prefix}-form input[type="number"],
+  .#{$pure-classes-prefix}-form input[type="search"],
+  .#{$pure-classes-prefix}-form input[type="tel"],
+  .#{$pure-classes-prefix}-form input[type="color"],
+  .#{$pure-classes-prefix}-form label {
+    margin-bottom: 0.3em;
+    display: block;
+  }
+
+  .#{$pure-classes-prefix}-group input[type="text"],
+  .#{$pure-classes-prefix}-form input[type="password"],
+  .#{$pure-classes-prefix}-form input[type="email"],
+  .#{$pure-classes-prefix}-form input[type="url"],
+  .#{$pure-classes-prefix}-form input[type="date"],
+  .#{$pure-classes-prefix}-form input[type="month"],
+  .#{$pure-classes-prefix}-form input[type="time"],
+  .#{$pure-classes-prefix}-form input[type="datetime"],
+  .#{$pure-classes-prefix}-form input[type="datetime-local"],
+  .#{$pure-classes-prefix}-form input[type="week"],
+  .#{$pure-classes-prefix}-form input[type="number"],
+  .#{$pure-classes-prefix}-form input[type="search"],
+  .#{$pure-classes-prefix}-form input[type="tel"],
+  .#{$pure-classes-prefix}-form input[type="color"] {
+    margin-bottom: 0;
+  }
+
+  .#{$pure-classes-prefix}-form-aligned .#{$pure-classes-prefix}-control-group label {
+    margin-bottom: 0.3em;
+    text-align: left;
+    display: block;
+    width: 100%;
+  }
+
+  .#{$pure-classes-prefix}-form-aligned .#{$pure-classes-prefix}-controls {
+    margin: 1.5em 0 0 0;
+  }
+
+  /* NOTE: pure-help-inline is deprecated. Use .pure-form-message-inline instead. */
+
+  .#{$pure-classes-prefix}-form .#{$pure-classes-prefix}-help-inline,
+  .#{$pure-classes-prefix}-form-message-inline,
+  .#{$pure-classes-prefix}-form-message {
+    display: block;
+    font-size: 80%;
+    /* Increased bottom padding to make it group with its related input element. */
+    padding: 0.2em 0 0.8em;
+  }
+}

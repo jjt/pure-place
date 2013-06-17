@@ -1,0 +1,91 @@
+/*csslint adjoining-classes:false*/
+
+/*TODO: Remove this lint rule override after a refactor of this code.*/
+
+/* MAIN MENU STYLING */
+
+.#{$pure-classes-prefix}-menu.#{$pure-classes-prefix}-menu-open,
+.#{$pure-classes-prefix}-menu.#{$pure-classes-prefix}-menu-horizontal li .#{$pure-classes-prefix}-menu-children {
+  background: #fff;
+  /* Old browsers */
+  border: 1px solid #b7b7b7;
+}
+
+/* remove borders for horizontal menus */
+
+.#{$pure-classes-prefix}-menu.#{$pure-classes-prefix}-menu-horizontal,
+.#{$pure-classes-prefix}-menu.#{$pure-classes-prefix}-menu-horizontal .#{$pure-classes-prefix}-menu-heading {
+  border: none;
+}
+
+/* LINK STYLES */
+
+.#{$pure-classes-prefix}-menu a {
+  border: 1px solid transparent;
+  border-left: none;
+  border-right: none;
+}
+
+.#{$pure-classes-prefix}-menu a,
+.#{$pure-classes-prefix}-menu .#{$pure-classes-prefix}-menu-can-have-children > li:after {
+  color: #777;
+}
+
+.#{$pure-classes-prefix}-menu .#{$pure-classes-prefix}-menu-can-have-children > li:hover:after {
+  color: #fff;
+}
+
+/* Focus style for a dropdown menu-item when the parent has been opened */
+
+.#{$pure-classes-prefix}-menu .#{$pure-classes-prefix}-menu-open {
+  background: #dedede;
+}
+
+.#{$pure-classes-prefix}-menu li a:hover,
+.#{$pure-classes-prefix}-menu li a:focus {
+  background: #eee;
+}
+
+/* DISABLED STATES */
+
+.#{$pure-classes-prefix}-menu li.#{$pure-classes-prefix}-menu-disabled a:hover,
+.#{$pure-classes-prefix}-menu li.#{$pure-classes-prefix}-menu-disabled a:focus {
+  background: #fff;
+  color: #bfbfbf;
+}
+
+.#{$pure-classes-prefix}-menu .#{$pure-classes-prefix}-menu-disabled > a {
+  background-image: none;
+  border-color: transparent;
+  cursor: default;
+}
+
+.#{$pure-classes-prefix}-menu .#{$pure-classes-prefix}-menu-disabled > a,
+.#{$pure-classes-prefix}-menu .#{$pure-classes-prefix}-menu-can-have-children.#{$pure-classes-prefix}-menu-disabled > a:after {
+  color: #bfbfbf;
+}
+
+/* HEADINGS */
+
+.#{$pure-classes-prefix}-menu .#{$pure-classes-prefix}-menu-heading {
+  color: #565d64;
+  text-transform: uppercase;
+  font-size: 90%;
+  margin-top: 0.5em;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #dfdfdf;
+}
+
+/* ACTIVE MENU ITEM */
+
+.#{$pure-classes-prefix}-menu .#{$pure-classes-prefix}-menu-selected a {
+  color: #000;
+}
+
+/* FIXED MENU */
+
+.#{$pure-classes-prefix}-menu.#{$pure-classes-prefix}-menu-open.#{$pure-classes-prefix}-menu-fixed {
+  border: none;
+  border-bottom: 1px solid #b7b7b7;
+}

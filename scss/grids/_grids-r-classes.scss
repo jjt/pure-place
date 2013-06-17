@@ -1,0 +1,67 @@
+/*csslint regex-selectors:false, unqualified-attributes:false*/
+
+.#{$pure-classes-prefix}-g-r {
+  letter-spacing: -0.31em;
+  *letter-spacing: normal;
+  *word-spacing: -0.43em;
+}
+
+/* Opera as of 12 on Windows needs word-spacing.
+   The ".opera-only" selector is used to prevent actual prefocus styling
+   and is not required in markup.
+*/
+
+.opera-only :-o-prefocus,
+.#{$pure-classes-prefix}-g-r {
+  word-spacing: -0.43em;
+}
+
+.#{$pure-classes-prefix}-g-r img {
+  max-width: 100%;
+}
+
+@media (min-width: 980px) {
+  .#{$pure-classes-prefix}-visible-phone {
+    display: none;
+  }
+
+  .#{$pure-classes-prefix}-visible-tablet {
+    display: none;
+  }
+
+  .#{$pure-classes-prefix}-hidden-desktop {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .#{$pure-classes-prefix}-g-r > .#{$pure-classes-prefix}-u,
+  .#{$pure-classes-prefix}-g-r > [class *= "pure-u-"] {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .#{$pure-classes-prefix}-g-r > .#{$pure-classes-prefix}-u,
+  .#{$pure-classes-prefix}-g-r > [class *= "pure-u-"] {
+    width: 100%;
+  }
+
+  .#{$pure-classes-prefix}-hidden-phone {
+    display: none;
+  }
+
+  .#{$pure-classes-prefix}-visible-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .#{$pure-classes-prefix}-hidden-tablet {
+    display: none;
+  }
+
+  .#{$pure-classes-prefix}-visible-desktop {
+    display: none;
+  }
+}

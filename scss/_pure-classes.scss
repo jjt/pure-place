@@ -1,0 +1,26 @@
+// Pure built as SASS classes with a custom prefix
+
+// Default prefix
+$pure-classes-prefix: pure !default;
+
+/* Base*/
+@import "base/normalize-context-classes.scss";
+@import "base/normalize-classes.scss";
+/* Buttons*/
+@import "buttons/buttons-core-classes.scss";
+@import "buttons/buttons-classes.scss";
+/* Forms*/
+@import "forms/forms-core-classes.scss";
+@import "forms/forms-r-classes.scss";
+@import "forms/forms-classes.scss";
+/* Grids*/
+@import "grids/grids-core-classes.scss";
+@import "grids/grids-r-classes.scss";
+@import "grids/grids-units-classes.scss";
+/* Menus*/
+@import "menus/menus-core-classes.scss";
+@import "menus/menus-paginator-classes.scss";
+@import "menus/menus-r-classes.scss";
+@import "menus/menus-classes.scss";
+/* Tables*/
+@import "tables/tables-classes.scss";
