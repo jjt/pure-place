@@ -241,11 +241,6 @@ grunt.initConfig({
                 interrupt: true
             }
         }
-    },
-
-    'pure-place': {
-      files: 'src/**/css/*.css',
-      dest: 'scss'
     }
 
 });
@@ -295,12 +290,21 @@ grunt.registerTask('release', [
 
 // -- Pure Place Config/Task ----------------------------------------------------
 
+grunt.config.set('pure-place-src', {
+  files: 'src/**/css/*.css',
+  options: {
+    dest: 'scss'
+  }
+});
 
-//require('grunt-pure-place')(grunt);
+grunt.config.set('pure-place-build', {
+  files: 'build/*.css',
+  options: {
+    dest: 'scss'
+  }
+});
+    
 grunt.loadNpmTasks('grunt-pure-place');
-
-
-
 
 
 // -- Suppress Task ------------------------------------------------------------
