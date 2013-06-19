@@ -40,7 +40,7 @@ $pure-grid-units: nth($pure-grid-ratios-compounded, $pure-grid-ratio-index);
       @each $pure-u in join($pure-grid-u-prefixes, $pure-grid-u-classes) {
         .#{$pure-g} > .#{$pure-u},
         .#{$pure-g} > [class *= "#{$pure-u}-"] {
-          width: 100;
+          width: 100%;
         }
       }
     }  
